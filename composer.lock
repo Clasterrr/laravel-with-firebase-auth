@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "873c90f5030e1e67e210b5d30565cfed",
+    "content-hash": "8cd21820437332571d95e28a9b4d4528",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -120,7 +120,6 @@
         },
         {
             "name": "dflydev/dot-access-data",
-
             "version": "v3.0.1",
             "source": {
                 "type": "git",
@@ -1585,7 +1584,6 @@
         },
         {
             "name": "laravel/framework",
-
             "version": "v8.54.0",
             "source": {
                 "type": "git",
@@ -1751,7 +1749,6 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-08-10T14:25:51+00:00"
-
         },
         {
             "name": "laravel/tinker",
@@ -3491,7 +3488,6 @@
         },
         {
             "name": "ramsey/collection",
-
             "version": "1.2.1",
             "source": {
                 "type": "git",
@@ -3502,7 +3498,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/ramsey/collection/zipball/eaca1dc1054ddd10cbd83c1461907bee6fb528fa",
                 "reference": "eaca1dc1054ddd10cbd83c1461907bee6fb528fa",
-
                 "shasum": ""
             },
             "require": {
@@ -3557,7 +3552,6 @@
             "support": {
                 "issues": "https://github.com/ramsey/collection/issues",
                 "source": "https://github.com/ramsey/collection/tree/1.2.1"
-
             },
             "funding": [
                 {
@@ -5447,7 +5441,6 @@
                 }
             ],
             "time": "2021-07-28T13:41:28+00:00"
-
         },
         {
             "name": "symfony/polyfill-php81",
@@ -7036,7 +7029,6 @@
                     "type": "patreon"
                 }
             ],
-
             "time": "2021-08-13T14:23:01+00:00"
         },
         {
