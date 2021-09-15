@@ -30,8 +30,8 @@ class ResetController extends Controller
       $verify = app('firebase.auth')->getUser($uid)->emailVerified;
         if ($verify == 1) {
           return redirect()->route('home');
-        }
-        else{
+        } 
+        else {
           try {
             $email = app('firebase.auth')->getUser($uid)->email;
             $link = app('firebase.auth')->sendEmailVerificationLink($email);

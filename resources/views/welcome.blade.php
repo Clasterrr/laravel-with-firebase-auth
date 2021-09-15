@@ -1,132 +1,1682 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
 
-        <title>Laravel</title>
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io4/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io4/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io4/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon_io4/site.webmanifest"> -->
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
+        <!-- <link rel="icon" type="image/png" href="/Users/danielking/Desktop/logo\(dark\).png"> -->
+        <link rel="icon" href="/assets/logo_cut2.png"/>
+        
+        <link rel="stylesheet" href="adaptive.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css" />
+        
 
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+        <title>MCEP</title>
+
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+    <body>
+        <article>
+            <header>
+                
+                
+                <div style="display: block; " class="uk-inline">
+                    <div id="test-target" class="ed-start-block  uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('assets/header-img.png');">
+                        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0; easing: -1" >
+                            <h1 class="uk-text-bolder">{{__('home.welcome.title')}}</h1>
+                            <p class="uk-text-bolder" style="font-size: larger;">{{__('home.welcome.subtitle')}}</p>
+                        </div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endauth
+                    </div>
+                    <hr style="width: 100%; margin: 0 auto; height: 3px !important" class="ed-style-hr">
+                    @include('welcome_view.nav')  
+                </div>    
+                
+                
+
+            </header>
+            
+            <div id="aboutUs" class=" ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <div  class="toTop-div">
+                <div class="toTop-div-lang">
+                    <a class="toTop-btn" href=""><span uk-icon="icon: world; ratio: 1.5"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="/ru">🇷🇺 RU</a></li>
+                            <li><a href="/ua">🇺🇦 UA</a></li>
+                            <li><a href="/en">🇬🇧 EN</a></li>
+                            <li><a href="/pl">🇵🇱 PL</a></li>
+                        </ul>
+                        
+                    </div>
+                    
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+                <div>
+                    <a href="#" class="toTop-btn uk-text-bolder"uk-scroll><span uk-icon="icon: chevron-up; ratio: 1.5"></span></a>
                 </div>
+                
+                
+            </div>
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
+            <div class="ed-medium-margin ed-main-content">
+                <!-- About us-->
+                <div class="ed-corner uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="ed-left-media-container uk-card-media-left uk-cover-container" >
+                        <img class="ed-about-img" src="/assets/img1.jpg" alt="" uk-cover>
+                        <canvas width="700" height="500"></canvas>
+                    </div>
+                    <div class="ed-about-block">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title uk-text-bolder">{{__('home.aboutUs.title')}}</h3>
+                            <p>{{__('home.aboutUs.content')}}</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+                <!-- <hr class="ed-style-hr ed-global-divider ed-center-content "> -->
+                <div id="programs" class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+                </div>
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+                <!--  Programs -->
+                <div  class="ed-center ed-corner uk-section ed-white uk-preserve-color">
+                    <div class="" style="margin: auto; max-width: 1600px; padding: 0px 40px">
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+                        <div class="uk-panel uk-light uk-margin-medium" style="margin-bottom: 80px; text-align: center;">
+                            <h3 style="font-size:xx-large" class="ed-dark-text uk-text-bolder ">{{__('home.programs.title')}}</h3>
+                        </div>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
+                        <!-- <h4 class="uk-text-bolder" style="font-size: x-large; text-align: center;">{{__('home.programs.subtitle')}}</h4> -->
+                        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                            <div>
+                                <div class="ed-corner ed-card-lightblue uk-card-hover ed-border-lightblue uk-card uk-card-default uk-card-body">
+                                    <a class="uk-link-reset" href="#fst-program" uk-scroll>
+                                    <!-- <div class="uk-card-badge uk-label">Badge</div> -->
+
+                                    <h3 class="uk-card-title">{{__('home.programs.fst-program.title')}}</h3>
+                                    <p>{{__('home.programs.fst-program.content')}}</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div >
+                                <div href="#" class="ed-corner ed-card-green uk-card-hover ed-border-green uk-card uk-card-default uk-card-body">
+                                    <a class="uk-link-reset" href="#snd-Program" uk-scroll>
+                                    <!-- <div class="uk-card-badge uk-label">Badge</div> -->
+
+                                    <h3 class="uk-card-title">{{__('home.programs.snd-program.title')}}</h3>
+
+                                    <p>{{__('home.programs.snd-program.content')}}</p>
+                                    </a>
+                                </div> 
+                                
+                            </div>
+                            <div >
+                                <div href="#" class="ed-corner ed-border-orange ed-card-orange uk-card-hover uk-card uk-card-default uk-card-body">
+                                    <a class="uk-link-reset" href="" >
+                                    <!-- <div class="uk-card-badge uk-label">Badge</div> -->
+
+                                    <h3 class="uk-card-title">{{__('home.programs.thd-program.title')}}</h3>
+
+                                    <p>{{__('home.programs.thd-program.content')}}</p>
+                                    </a>
+                                </div> 
+                                
+                            </div>
+                            <div >
+                                <div href="#" class="ed-corner ed-border-yellow ed-card-orange uk-card-hover uk-card uk-card-default uk-card-body">
+                                    <a class="uk-link-reset" href="#thd-Program" uk-scroll>
+                                    <!-- <div class="uk-card-badge uk-label">Badge</div> -->
+
+                                    <h3 class="uk-card-title">{{__('home.programs.fth-program.title')}}</h3>
+
+                                    <p>{{__('home.programs.fth-program.content')}}</p>
+                                    </a>
+                                </div> 
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        
+            </div>
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                <hr class="ed-style-vertical-hr">
+            </div>
+
+            <!-- First program -->
+
+            <div id="fst-program" class="ed-fst-program">
+
+                <h3 class="ed-light-text uk-text-bolder ed-largeer-title ed-title-padding-bottom">{{__('home.fst-program.title')}}</h3>
+
+                <div style="margin-bottom: 50px">
+                    <h2 class="ed-light-text uk-text-bolder" style="text-align: center; margin-bottom: 50px">{{__('home.fst-program.section_0.title')}}</h2>
+
+                    <div class="ed-special-list">
+
+                    
+
+                        <div>
+                            <h4>{{__('home.fst-program.section_0.subtitle')}}</h4>
+                            <ul class="uk-list uk-list-disc">
+                                <li>{{__('home.fst-program.section_0.list.0')}}</li>
+                                <li>{{__('home.fst-program.section_0.list.1')}}</li>
+                                <li>{{__('home.fst-program.section_0.list.2')}}</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                    
+                <div style="margin-bottom: 50px">
+                    <h2 class="ed-light-text uk-text-bolder" style="text-align: center; margin-bottom: 50px">{{__('home.fst-program.section_1.title')}}</h2>
+                    <div class="ed-special-list">
+                    <!-- class="uk-open" -->
+
+                        <ul uk-accordion>
+
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_1.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_1.content')}}</p>
+                                </div>
+                            </li>
+                            <li >
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_2.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_2.content')}}</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_3.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_3.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_4.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_4.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_5.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_5.content')}}</p>
+                                </div>
+                            </li>
+                            <!--  -->
+
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_6.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_6.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_7.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_7.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_8.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_8.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_9.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_9.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_10.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_10.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_11.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_11.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_12.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_12.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_13.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_13.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_14.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_14.content')}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+
+                <div style="text-align: center;">
+                    <div style="margin-bottom: 50px">
+                        <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">Условия</h2>
+                        <h3 class="ed-light-text" >Мы предлагаем полное сопровождение студента <br>на протяжении всего периода обучения.</h3>
+                    </div>
+                    <div class="ed-special-list" style="width: 80%;text-align: initial;">
+                        <table class="uk-table">
+                            <tbody>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантия поступления в наше учебное заведение;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в получении визы родителям;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантированное трудоустройство по специальности по окончанию обучения;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в получении студенческой визы;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Подготовка документов для консульства;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в выборе профессии;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Подготовка документов для зачисления;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в подборе жилья на период обучения;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Предоставление стартового пакета польского оператора;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в получении загранпаспорта;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Оформление прописки студента;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Ориентационная программа по адаптации в Польше;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Контроль студентов во время обучения (прогулы, успеваемость, посещение занятий);</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Определение необходимой нагрузки для изучения языка;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Карта побыта и легализация;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в организации визита родителей к детям;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Поддержка студента в Польше на период всего обучения;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в трудоустройстве во время обучения;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в поиске жилья в крупном городе Жешув;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Курьерская доставка оригиналов документов из учебного заведения;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Выдача документа от учебного заведения, который свидетельствует о резервации и зачислении;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в открытие банковского счета;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Ваш личный менеджер с вами на связи 24/7 в любом удобном для вас мессенджере;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Прямой контакт с опекуном;</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Юридическая информационная поддержка;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантированное трудоустройство по специальности по окончанию обучения.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантия поступления в наше учебное заведение;</td>
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантия поступления в наше учебное заведение;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+
+                <div class="ed-special-list " style="text-align: center;">
+                    <h3 class="uk-text-bolder" style="font-size: xx-large;">Стоимость данного пакета услуг составляет: 900Є за весь период обучения</h3>
+
+                    <h3>Оплата разбивается на <a class="uk-link-heading" href="#payment-in" uk-scroll><span class="uk-label">части</span> </a></h3>
+                </div> -->
+
+                
+
+                <!-- column-rule: 1px solid #e5e5e5; -->
+
+                <!-- Так же интересно -->
+                <!-- <div class="ed-centered-div">
+
+                    <h3 class="ed-light-text uk-text-bolder" style="font-size: xx-large;  margin-bottom: 100px">{{__('home.fst-program.section_2.title')}}</h3>
+
+
+                    <div class="uk-column-1-3" style="column-rule: 1px solid #e5e5e5; column-gap: 50px !important;">
+                        
+
+                        <div>
+                            <h3 class="ed-light-text" style=" font-weight: bold">{{__('home.fst-program.section_2.blocks.block_1.title')}}</h3>
+                            <p class="ed-light-text">{{__('home.fst-program.section_2.blocks.block_1.content')}}</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <h3 class="ed-light-text" style="font-weight: bold">{{__('home.fst-program.section_2.blocks.block_2.title')}}</h3>
+                            <p class="ed-light-text">{{__('home.fst-program.section_2.blocks.block_2.content')}}</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <h3 class="ed-light-text" style="font-weight: bold">{{__('home.fst-program.section_2.blocks.block_3.title')}}</h3>
+                            <p class="ed-light-text">{{__('home.fst-program.section_2.blocks.block_3.content')}}</p>
                         </div>
                     </div>
+                </div> -->
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical"> -->
+
+                <!-- {{__('home.bot_section.title')}} -->
+
+                <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+                <!-- Bot button -->
+                <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                            <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.bot_section.title')}}</h2>
+                            <h3 class="ed-light-text" >{{__('home.bot_section.subtitle')}}</h3>
                     </div>
+
+                    <div>
+                        <a href="https://t.me/EduBitTestBot" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            <span class="uk-icon" rel="nofollow" title="Telegram" style="padding-right: 5px;">
+                                <svg width="22" height="44" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="telegram">
+                                    <path d="m21.005697,5.550602l-2.74611,12.950637c-0.207176,0.914021 -0.74748,1.141452 -1.515294,0.710964l-4.184146,-3.083356l-2.018885,1.941824c-0.223392,0.223392 -0.775524,0.536686 -0.751124,-0.033221l0.21082,-3.817906l7.754913,-7.007478c0.337166,-0.300579 -0.073103,-0.467156 -0.524051,-0.16655l-9.586957,6.036571l-4.127295,-1.291786c-0.897769,-0.280315 -0.913985,-0.897805 0.186841,-1.328373l16.143532,-6.219364c0.747399,-0.280279 1.401485,0.166506 1.157757,1.308038z"></path>
+                                </svg>
+                            </span>
+                            <span id="desk-button">
+                                {{__('home.bot_section.buttons.telegram_button.title')}}
+                            </span>
+                            <span id="mobile-button">
+                                
+                            </span>
+                            
+
+                        </a>
+                    </div>
+                </div>
+<!-- 
+                <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-simple-hr">
+                </div> -->
+            </div>
+
+            <!-- Vertical Divider -->
+
+            <div class=" ed-center-hr">
+                    <!-- <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr"> -->
+                    <hr class="ed-style-vertical-hr">
+            </div>
+
+            <!-- Second program -->
+
+            <div id="snd-Program" class="ed-snd-program">
+                <h3 class="ed-light-text uk-text-bolder ed-largeer-title ed-title-padding-bottom">{{__('home.snd-program.title')}}</h3>
+                
+                
+                <div style="margin-bottom: 50px">
+                    <h2 class="ed-light-text uk-text-bolder" style="text-align: center; margin-bottom: 50px">{{__('home.snd-program.section_0.title')}}</h2>
+
+                    <div class="ed-special-list">
+
+                    
+
+                        <div>
+                            <h4>{{__('home.snd-program.section_0.subtitle')}}</h4>
+                            <ul class="uk-list uk-list-disc">
+                                <li>{{__('home.snd-program.section_0.list.0')}}</li>
+                                <li>{{__('home.snd-program.section_0.list.1')}}</li>
+                                <li>{{__('home.snd-program.section_0.list.2')}}</li>
+                                <li>{{__('home.snd-program.section_0.list.3')}}</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+
+                <div style="margin-bottom: 50px">
+                <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.snd-program.section_1.title')}}</h3>
+                    <div class="ed-special-list">
+                        
+                    
+
+                        <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_1.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_1.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_2.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_2.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_3.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_3.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_4.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_4.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_5.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_5.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_6.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_6.content')}}</p>
+                                </div>
+                            </li>
+                            <!--  -->
+                            <!--  -->
+                            <!--  -->
+
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_7.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_7.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_8.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_8.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_9.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_9.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_10.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_10.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_11.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_11.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_12.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_12.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_13.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_13.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_14.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_14.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_15.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_15.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_16.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_16.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_17.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_17.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_18.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_18.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_19.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_19.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_20.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_20.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_21.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_21.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_22.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_22.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.snd-program.section_1.professions.profession_23.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.snd-program.section_1.professions.profession_23.content')}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+
+                <div class=" " style="margin: 0 auto; width: 40%">
+                    <div style="margin-bottom: 100px; text-align: center;">
+                        <h2 class="ed-light-text uk-text-bolder" style="font-size: xx-large; text-align: center;">СТОИМОСТЬ ОБУЧЕНИЯ</h2>
+                        <h3 class="ed-light-text" >Срок обучения длится: 3 года (шесть семестров). <br>Возможна оплата частями! </h3>
+                    </div>
+
+                    <table class="uk-table uk-table-middle uk-table-divider" style="width: 90%; margin: 0 auto;">
+                        <thead>
+
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text" >Первый год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1600 €</th>
+                            </tr>
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text">Второй год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1100 €</th>
+                            </tr>
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text">Третий год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1100 €</th>
+                            </tr>
+                            
+                        </thead>
+                        
+                    </table>
+                </div> -->
+
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical"> -->
+
+                <!-- Bot button -->
+                <!-- <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                        <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">Условия</h2>
+                        <h3 class="ed-light-text" >Все условия, что мы предлогаем находятся ниже</h3>
+                    </div>
+
+                    <div>
+                        <a href="" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            
+                            Условия
+
+                        </a>
+                    </div>
+                </div> -->
+
+                <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+                <!-- Bot button -->
+                <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                            <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.bot_section.title')}}</h2>
+                            <h3 class="ed-light-text" >{{__('home.bot_section.subtitle')}}</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://t.me/EduBitTestBot" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            <span class="uk-icon" rel="nofollow" title="Telegram" style="padding-right: 5px;">
+                                <svg width="22" height="44" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="telegram">
+                                    <path d="m21.005697,5.550602l-2.74611,12.950637c-0.207176,0.914021 -0.74748,1.141452 -1.515294,0.710964l-4.184146,-3.083356l-2.018885,1.941824c-0.223392,0.223392 -0.775524,0.536686 -0.751124,-0.033221l0.21082,-3.817906l7.754913,-7.007478c0.337166,-0.300579 -0.073103,-0.467156 -0.524051,-0.16655l-9.586957,6.036571l-4.127295,-1.291786c-0.897769,-0.280315 -0.913985,-0.897805 0.186841,-1.328373l16.143532,-6.219364c0.747399,-0.280279 1.401485,0.166506 1.157757,1.308038z"></path>
+                                </svg>
+                            </span>
+                            <span id="desk-button">
+                                {{__('home.bot_section.buttons.telegram_button.title')}}
+                            </span>
+                            <span id="mobile-button">
+                                
+                            </span>
+                            
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bot button -->
+                <!-- <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                            <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.bot_section.title')}}</h2>
+                            <h3 class="ed-light-text" >{{__('home.bot_section.subtitle')}}</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://t.me/EduBitTestBot" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            <span class="uk-icon" rel="nofollow" title="Telegram" style="padding-right: 5px;">
+                                <svg width="22" height="44" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="telegram">
+                                    <path d="m21.005697,5.550602l-2.74611,12.950637c-0.207176,0.914021 -0.74748,1.141452 -1.515294,0.710964l-4.184146,-3.083356l-2.018885,1.941824c-0.223392,0.223392 -0.775524,0.536686 -0.751124,-0.033221l0.21082,-3.817906l7.754913,-7.007478c0.337166,-0.300579 -0.073103,-0.467156 -0.524051,-0.16655l-9.586957,6.036571l-4.127295,-1.291786c-0.897769,-0.280315 -0.913985,-0.897805 0.186841,-1.328373l16.143532,-6.219364c0.747399,-0.280279 1.401485,0.166506 1.157757,1.308038z"></path>
+                                </svg>
+                            </span>
+                            {{__('home.bot_section.buttons.telegram_button.title')}}
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-simple-hr">
+                </div> -->
+            </div>
+
+            <!-- Divider -->
+            <!-- <div id="payment-in" class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+            
+            <div class="ed-special-list " >
+                <h3 class="ed-dark-text uk-text-bolder ed-largeer-title" style="text-align: center; padding-bottom: 100px">Условия оплаты частями!</h3>
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt class="ed-payment-in-title">150 €</dt>
+                    <dd>Первая оплата наша гарантия того, что вы будете поступать и мы начинаем оформление ваших документов и приглашение на обучение, эта сумма уже входит в стоимость за обучение</dd>
+
+                    <dt class="ed-payment-in-title">150 €</dt>
+                    <dd>Оплачиваете после получения готового приглашения на обучение и мы дальше продолжаем подготовку ваших Документов, эта сумма уже входит в стоимость за обучение</dd>
+
+                    <dt class="ed-payment-in-title">300 €</dt>
+                    <dd>После этой оплаты мы вам выдаем квитанцию, которую требуют при получении в консульстве визы, без этой квитанции визу получить невозможно, так как у вас платное обучение</dd>
+
+                    <dt class="ed-payment-in-title">Ежемесячно</dt>
+                    <dd>Далее вносите оплату каждый месяц по 450 злотых.</dd>
+                </dl>
+            </div> -->
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <div id="thd-Program" class="ed-thd-program">
+                <h3 class="ed-light-text uk-text-bolder ed-largeer-title ed-title-padding-bottom">{{__('home.fth-program.title')}}</h3>
+                <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.fth-program.section_1.title')}}</h3>
+                <div class="ed-special-list">
+                    
+
+                    <ul uk-accordion>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_1.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_1.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_2.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_2.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_3.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_3.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_4.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_4.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_5.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_5.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_6.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_6.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_7.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_7.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_8.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_8.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_9.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_9.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_10.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_10.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_11.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_11.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_12.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_12.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_13.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_13.content')}}</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">{{__('home.fth-program.section_1.professions.profession_14.title')}}</a>
+                            <div class="uk-accordion-content">
+                                <p>{{__('home.fth-program.section_1.professions.profession_14.content')}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+
+                <div class=" " style="margin: 0 auto; width: 40%">
+                    <div style="margin-bottom: 100px; text-align: center;">
+                        <h2 class="ed-light-text uk-text-bolder" style="font-size: xx-large; text-align: center;">СТОИМОСТЬ ОБУЧЕНИЯ</h2>
+                        <h3 class="ed-light-text" >Срок обучения длится: 3 года (шесть семестров). <br>Возможна оплата частями! </h3>
+                    </div>
+
+                    <table class="uk-table uk-table-middle uk-table-divider" style="width: 90%; margin: 0 auto;">
+                        <thead>
+
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text" >Первый год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1600 €</th>
+                            </tr>
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text">Второй год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1100 €</th>
+                            </tr>
+                            <tr>
+                                <th class="ed-bolder-text ed-larger-text ed-light-text">Третий год</th>
+                                <th class="ed-larger-text ed-light-text" style="text-align: right;">1100 €</th>
+                            </tr>
+                            
+                        </thead>
+                        
+                    </table>
+                </div> -->
+
+                <!-- <hr class="ed-simple-style-vertical-hr uk-divider-vertical"> -->
+
+                <!-- Bot button -->
+                <!-- <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                        <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">Условия</h2>
+                        <h3 class="ed-light-text" >Все условия, что мы предлогаем находятся ниже</h3>
+                    </div>
+
+                    <div>
+                        <a href="" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            
+                            Условия
+
+                        </a>
+                    </div>
+                </div> -->
+
+                <hr class="ed-simple-style-vertical-hr uk-divider-vertical">
+                <!-- Bot button -->
+                <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                            <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.bot_section.title')}}</h2>
+                            <h3 class="ed-light-text" >{{__('home.bot_section.subtitle')}}</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://t.me/EduBitTestBot" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            <span class="uk-icon" rel="nofollow" title="Telegram" style="padding-right: 5px;">
+                                <svg width="22" height="44" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="telegram">
+                                    <path d="m21.005697,5.550602l-2.74611,12.950637c-0.207176,0.914021 -0.74748,1.141452 -1.515294,0.710964l-4.184146,-3.083356l-2.018885,1.941824c-0.223392,0.223392 -0.775524,0.536686 -0.751124,-0.033221l0.21082,-3.817906l7.754913,-7.007478c0.337166,-0.300579 -0.073103,-0.467156 -0.524051,-0.16655l-9.586957,6.036571l-4.127295,-1.291786c-0.897769,-0.280315 -0.913985,-0.897805 0.186841,-1.328373l16.143532,-6.219364c0.747399,-0.280279 1.401485,0.166506 1.157757,1.308038z"></path>
+                                </svg>
+                            </span>
+                            <span id="desk-button">
+                                {{__('home.bot_section.buttons.telegram_button.title')}}
+                            </span>
+                            <span id="mobile-button">
+                                
+                            </span>
+                            
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bot button -->
+                <!-- <div class="ed-centered-div">
+                    <div style="margin-bottom: 50px">
+                            <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.bot_section.title')}}</h2>
+                            <h3 class="ed-light-text" >{{__('home.bot_section.subtitle')}}</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://t.me/EduBitTestBot" class="ed-simple-link ed-bot-button uk-text-bolder">
+                            <span class="uk-icon" rel="nofollow" title="Telegram" style="padding-right: 5px;">
+                                <svg width="22" height="44" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="telegram">
+                                    <path d="m21.005697,5.550602l-2.74611,12.950637c-0.207176,0.914021 -0.74748,1.141452 -1.515294,0.710964l-4.184146,-3.083356l-2.018885,1.941824c-0.223392,0.223392 -0.775524,0.536686 -0.751124,-0.033221l0.21082,-3.817906l7.754913,-7.007478c0.337166,-0.300579 -0.073103,-0.467156 -0.524051,-0.16655l-9.586957,6.036571l-4.127295,-1.291786c-0.897769,-0.280315 -0.913985,-0.897805 0.186841,-1.328373l16.143532,-6.219364c0.747399,-0.280279 1.401485,0.166506 1.157757,1.308038z"></path>
+                                </svg>
+                            </span>
+                            {{__('home.bot_section.buttons.telegram_button.title')}}
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-simple-hr">
+                </div> -->
+            </div>
+
+            <div class=" ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+
+            <!-- УСЛОВИЯ -->
+            <div class="ed-white ed-special-list " style="width: 80%">
+                <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center; margin-bottom: 50px">{{__('home.conditions.title')}}</h1>
+
+
+                <div class="whole-width"></div>
+
+                <div>
+                    <div class="ed-subtitle-margin" style="width: 60%">
+                        <h3 class="uk-text-bolder" style="text-align: center;">{{__('home.conditions.section_1.title')}}</h3>
+                    </div>
+
+                    <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 80%;">
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_1')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_2')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_3')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_4')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_5')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_6')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_7')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_8')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_9')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_10')}}</td> -->
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_26')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_11')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_12')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_13')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_14')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_15')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_17')}}</td>
+                            </tr>
+                            <tr>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_18')}}</td> -->
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_24')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_19')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_20')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_21')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_22')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_23')}}</td> -->
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_25')}}</td>
+                            </tr>
+                            <tr>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_24')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_25')}}</td> -->
+                            </tr>
+                            <tr>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_26')}}</td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr class="ed-mini-vertical-hr ">
+                
+                </div>
+
+                <div>
+                    <div class="ed-subtitle-margin" style="width: 60%">
+                        <h3 class="uk-text-bolder" style="text-align: center;">{{__('home.conditions.section_2.title')}}</h3>
+                    </div>
+                    <div class="ed-special-list ed-gradient-background uk-column-1-2" style="column-rule: 1px solid #e5e5e5; width: 70%; margin: 0 auto">
+                        
+
+                        <div>
+                            <p class="ed-light-text uk-text-bolder">{{__('home.conditions.section_2.blocks.block_1.content')}}</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <p class="ed-light-text uk-text-bolder">{{__('home.conditions.section_2.blocks.block_2.content')}}</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <!-- Advantages -->
+            <div class="ed-white ed-special-list " style="width: 80%;">
+                <div style="margin: 0px auto; width: 60%">
+                    <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.advantages.title')}}</h2>
+                    <h3 class="" style="text-align: center;">{{__('home.advantages.subtitle')}}</h3>
+                </div>
+
+                <div class="whole-width"></div>
+
+                <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 70%;">
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_1')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_2')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_8')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_4')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_5')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_6')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_7')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_3')}}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_9')}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </div>
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <!-- Galery -->
+            <div id="galery" class="ed-galery ">
+                    <!-- <div class="header" style="position: absolute;">
+                        <a href="" class="ed-light-text uk-text-bolder logo">{{__('home.galery.title')}}</a>
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <ul class="menu">
+                            <li class="btn-li"><a class="btn-main-a btn uk-text-bolder" href="" ><span>{{__('home.galery.buttons.button_1')}}</span></a></li>
+                            <li class="btn-li"><a class="btn uk-text-bolder" href="" style="width: 170px;"><span>{{__('home.galery.buttons.button_2')}}</span></a></li>
+                            <li class="btn-li"><a class="btn uk-text-bolder" href=""><span>{{__('home.galery.buttons.button_3')}}</span></a></li>
+                            <li class="btn-li"><a class="btn uk-text-bolder" href=""><span>{{__('home.galery.buttons.button_4')}}</span></a></li>
+                        </ul>
+                    </div> -->
+             
+                    <!-- Desktop version -->
+                    <ul id="desk-galery" class="ed-nav-ul uk-navbar-nav" uk-switcher="animation: uk-animation-fade; swiping: false;" style="justify-content: flex-start; align-items: center;">
+                        <li class="ed-galery-padding" >
+                            <h3 class="ed-light-text uk-text-bolder ed-largeer-title">{{__('home.galery.title')}}</h3>
+                        </li>
+                        <li>
+                            <ul class="ed-nav-ul uk-navbar-nav">
+                                <li class="main_nav_li"><a class="btn uk-text-bolder" href="" ><span>{{__('home.navigation_view.about')}}</span></a></li>
+                                <li class="main_nav_li"><a class="btn uk-text-bolder" href="" ><span>{{__('home.navigation_view.programs')}}</span></a></li>
+                                <li class="main_nav_li"><a class="btn uk-text-bolder" href="" ><span>{{__('home.navigation_view.galery')}}</span></a></li>
+                                <li class="main_nav_li"><a class="btn uk-text-bolder" href="" ><span>{{__('home.navigation_view.contacts')}}</span></a></li> 
+                            </ul>
+                        </li>
+                    </ul> 
+
+                    <!-- Mobile version -->
+                    <ul id="mobile-galery" class="ed-nav-ul uk-navbar-nav" uk-switcher="animation: uk-animation-fade; swiping: false;" style="justify-content: space-between; align-items: center; display: none">
+                        <li>
+                            <h3 class="ed-light-text uk-text-bolder ed-largeer-title">{{__('home.galery.title')}}</h3>
+                        </li>
+                        <li>
+                            <div class="header" style="position: relative; width: 1px !important; ">
+                                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                                <ul class="menu">
+                                    <li class="btn-li"><a class="btn-main-a btn uk-text-bolder" href="" ><span>{{__('home.galery.buttons.button_1')}}</span></a></li>
+                                    <li class="btn-li"><a class="btn uk-text-bolder" href="" style="width: 170px;"><span>{{__('home.galery.buttons.button_2')}}</span></a></li>
+                                    <li class="btn-li"><a class="btn uk-text-bolder" href=""><span>{{__('home.galery.buttons.button_3')}}</span></a></li>
+                                    <li class="btn-li"><a class="btn uk-text-bolder" href=""><span>{{__('home.galery.buttons.button_4')}}</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>    
+                    <hr class="ed-style-hr">
+                    <ul class="uk-switcher uk-margin">
+
+                        <!-- Заглушка -->
+                        <li></li>
+                        
+
+                        <!-- Наши студенты -->
+                         <li>
+                            <div class="uk-position-relative" uk-slideshow="animation: fade">
+
+                            <ul class="ed-slider-corner uk-slideshow-items" >
+                                <li>
+                                    <img src="assets/galery/our_office/office1.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office2.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office3.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office4.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office5.jpg" alt="" >
+                                </li>
+                                </ul>
+
+                            <div class="uk-position-bottom-center uk-position-small">
+                                <ul class="uk-thumbnav">
+                                    <li uk-slideshow-item="0"><a href="#"><img src="assets/galery/our_office/office1.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="1"><a href="#"><img src="assets/galery/our_office/office2.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="2"><a href="#"><img src="assets/galery/our_office/office3.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="3"><a href="#"><img src="assets/galery/our_office/office4.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="4"><a href="#"><img src="assets/galery/our_office/office5.jpg" width="100" alt=""></a></li>
+
+                                </ul>
+                            </div>
+
+                            </div>
+                        </li> 
+
+                        <!-- Наш офис-->
+                         <li>
+                            <div class="uk-position-relative" uk-slideshow="animation: fade">
+
+                            <ul class="ed-slider-corner uk-slideshow-items" >
+                                <li>
+                                    <img src="assets/galery/our_office/office1.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office2.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office3.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office4.jpg" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img src="assets/galery/our_office/office5.jpg" alt="" >
+                                </li>
+                                </ul>
+
+                            <div class="uk-position-bottom-center uk-position-small">
+                                <ul class="uk-thumbnav">
+                                    <li uk-slideshow-item="0"><a href="#"><img src="assets/galery/our_office/office1.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="1"><a href="#"><img src="assets/galery/our_office/office2.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="2"><a href="#"><img src="assets/galery/our_office/office3.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="3"><a href="#"><img src="assets/galery/our_office/office4.jpg" width="100" alt=""></a></li>
+                                    <li uk-slideshow-item="4"><a href="#"><img src="assets/galery/our_office/office5.jpg" width="100" alt=""></a></li>
+
+                                </ul>
+                            </div>
+
+                            </div>
+                        </li> 
+
+                        <!-- Cертификация -->
+
+                        <!-- <li>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+                            <ul class="ed-slider-corner uk-slideshow-items">
+                                <li> <img src="assets/galery/сertification/cerf1.jpg" alt="" uk-cover> </li>
+                                <li> <img src="assets/galery/сertification/cerf2.jpg" alt="" uk-cover> </li>
+                                <li> <img src="assets/galery/сertification/cerf3.jpg" alt="" uk-cover> </li>
+                                <li> <img src="assets/galery/сertification/cerf4.jpg" alt="" uk-cover> </li>
+
+                            </ul>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                            </div>
+                        </li> -->
+
+                        <!-- Отзывы -->
+                        <!-- <li>
+                            <div class="ed-slider-margin-center" uk-slider>
+                                <div class="uk-position-relative">
+
+                                    <div class="ed-slider-corner uk-slider-container uk-light">
+                                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw1.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw2.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw3.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw4.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw5.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw6.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw7.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw8.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw9.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                            <li class="ed-slider-img-padding">
+                                                <img class="ed-slider-corner" src="assets/galery/reviews_img/rw10.jpg" alt="">
+                                                <div class="uk-position-center uk-panel"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="uk-hidden@s uk-light">
+                                        <a class="ed-arrow-color uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                        <a class="ed-arrow-color uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                    </div>
+
+                                    <div class="uk-visible@s">
+                                        <a class="ed-arrow-color uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                        <a class="ed-arrow-color uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                    </div>
+
+                                </div>
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                            </div>
+                        </li> -->
+                    </ul>
+                    
+                    <div>
+                    
+
+                    
+                    
+
+                    </div>
+
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <!-- Our team -->
+            <div class="ed-white ed-special-list " style="width: 80%;">
+
+                <h1 class="uk-text-bolder" style="text-align: center;">{{__('home.our_team.title')}}</h1>
+                <div class="whole-width"></div>
+                
+                <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
+                    <!-- 1-й ряд -->
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <!-- <div src="assets/leadership/ld_1.jpg" class="uk-border-circle" width="200" height="200"></div> -->
+                            <div src="assets/leadership/ld_4.jpg" class="uk-border-circle ed-leadership-icon" style="background-image: url(assets/leadership/ld_1.jpg);"></div>
+
+                            <div>
+                                <h3 class="ed-leadership-title">Валерий Царалунга</h3>
+                                <h4 class="ed-leadership-subtitle">Директор MCEP</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                        <div src="assets/leadership/ld_4.jpg" class="uk-border-circle ed-leadership-icon" style="background-image: url(assets/leadership/ld_2.jpg);"></div>
+
+                            <div>
+                                <h3 class="ed-leadership-title">Татьяна Ли</h3>
+                                <h4 class="ed-leadership-subtitle">Заместитель директора</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                        <div src="assets/leadership/ld_4.jpg" class="uk-border-circle ed-leadership-icon" style="background-image: url(assets/leadership/ld_3.jpg);"></div>
+
+                            <div>
+                                <h3 class="ed-leadership-title">Катерина Апостолова</h3>
+                                <h4 class="ed-leadership-subtitle">Старший менеджер</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <!-- <img src="assets/leadership/ld_4.jpg" class="uk-border-pill" width="200" height="200" alt=""> -->
+                            <div src="assets/leadership/ld_4.jpg" class="uk-border-circle ed-leadership-icon" style="background-image: url(assets/leadership/ld_4.jpg);"></div>
+
+                            <div>
+                                <h3 class="ed-leadership-title">Дарина Филипчук</h3>
+                                <h4 class="ed-leadership-subtitle">Менеджер по работе с иностранцами, опекун, репетитор.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-й ряд -->
+                    
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class=" ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+            
+            <!-- Partners -->
+            <div id="partners" class="ed-medium-margin ed-partner ed-white">
+
+                <h1 class="uk-text-bolder">{{__('home.partner.title')}}</h1>
+
+                <div class="whole-width"></div>
+
+                <div>
+                    <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" href="https://www.morska.edu.pl" src="assets/partners/ptn1.jpg" alt=""></div>
+                        </div>
+                        
+                        
+                        <div class="">
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn2.jpg" alt=""></div>
+                        </div>
+                    
+
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn3.jpg" alt=""></div>
+                        </div>
+                    
+
+                    
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn4.jpg" alt=""></div> 
+                        </div>
+                        
+
+
+
+                        <div class="">
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn5.jpg" alt=""></div>
+                        </div>
+                        
+
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn6.jpg" alt=""></div>
+                        </div>
+                        
+
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn7.jpg" alt=""></div>
+                        </div>
+                        
+
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"><img class="ed-partner-img" src="assets/partners/ptn8.jpg" alt=""></div>
+                        </div>
+                    
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"> <img class="ed-partner-img" src="assets/partners/ptn9.svg" alt=""></div>
+                        </div>
+                        
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"> <img class="ed-partner-img" src="assets/partners/ptn10.jpg" alt=""></div>
+                        </div>
+                        
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"> <img class="ed-partner-img" src="assets/partners/ptn11.svg" alt=""></div>
+                        </div>
+                        
+                        
+                        <div>
+                            <div class="ed-corner-min uk-card uk-card-hover uk-card-body"> <img class="ed-partner-img" src="assets/partners/ptn12.jpg" alt=""></div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="ed-center-hr">
+                    <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <!-- Официальный представитель -->
+            <div class="ed-white ed-special-list " style="width: 80%;">
+                
+
+                <div style="margin-bottom: 100px;">
+                    <div style="margin: 0px auto; width: 60%;  margin-bottom:70px">
+                        <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.official_representative.title')}}</h2>
+                    </div>
+
+                    <div class="whole-width"></div>
+
+                    <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 50%;">
+                        <table class="uk-table">
+                            <tbody>
+                            <!-- requisites_person -->
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.person')}}</td>
+                                    <td>{{__('home.requisites_person.person')}}</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.NKEPP')}}</td>
+                                    <td>3505403904</td>
+                                </tr>
+                                <!-- <tr class="mobile-tr">
+                                    <td>JPRPOU:</td>
+                                    <td>2009180000000001867</td>
+                                </tr> -->
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.bank_account')}}</td>
+                                    <td>UA523206490000026073052825876</td>
+                                    
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.phoneNumber')}}</td>
+                                    <td>+380985909044, +48574567102</td>
+                                    
+                                </tr>
+                                <tr class="mobile-tr">
+                                <td>{{__('home.requisites.email')}}</td>
+                                <td>cdu.ua.eu@gmail.com</td>
+                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="whole-width"></div>
+
+                <div>
+                    <div style="margin: 0px auto; width: 60%;  margin-bottom:70px">
+                        <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.requisites.title')}}</h2>
+                    </div>
+
+                    
+                    <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 70%;">
+                        <table class="uk-table">
+                            <tbody>
+                            <tr >
+                                <td>MIĘDZYNARODOWE CENTRUM EDUKACJI I PRAKTYKI SP.Z.O.O.</td>
+                            </tr>
+                                <tr class="mobile-tr">
+                                    <td>NIP:</td>
+                                    <td>6751748825</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>REGON:</td>
+                                    <td>388641557</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.addres')}}</td>
+                                    <td>{{__('home.requisites_person.addres')}}</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.email')}}</td>
+                                    <td>cdu.ua.eu@gmail.com</td>
+                                    
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>{{__('home.requisites.phoneNumber')}}</td>
+                                    <td>+380985909044, +48574567102</td>
+                                    
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>Santander bank</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>ZI Nr Konta:</td>
+                                    <td>17 1090 2053 0000 0001 4795 9925</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>ZI IBAN:</td>
+                                    <td>17 1090 2053 0000 0001 4795 9925</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>€ Nr Konta:</td>
+                                    <td>54 1090 2053 0000 0001 4796 0035</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>€ IBAN:</td>
+                                    <td>54 1090 2053 0000 0001 4796 0035</td>
+                                </tr>
+                                <tr class="mobile-tr">
+                                    <td>BIC/SWIFT:</td>
+                                    <td>WBKPPLPP</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+
+            <!-- Divider -->
+            <!-- <div  class="ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div> -->
+
+
+            <!-- Реквизиты
+             <div class="ed-white ed-special-list " style="width: 80%;">
+                <div style="margin: 0px auto; width: 60%">
+                    <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.requisites.title')}}</h2>
+                    
+                </div>
+
+                
+
+                <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 70%;">
+                    <table class="uk-table">
+                        <tbody>
+                        <tr >
+                            <td>MIĘDZYNARODOWE CENTRUM EDUKACJI I PRAKTYKI SP.Z.O.O.</td>
+                        </tr>
+                            <tr class="mobile-tr">
+                                <td>NIP:</td>
+                                <td>6751748825</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>REGON:</td>
+                                <td>388641557</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>Adres siedziba:</td>
+                                <td>ul. Mogilska, nr 40, lok. 26, miejsc. Kraków, kod 31-546, poczta Kraków, kraj Polska</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>Email:</td>
+                                <td>cdu.ua.eu@gmail.com</td>
+                                
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>Tel.</td>
+                                <td>+380985909044, +48574567102</td>
+                                
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>Santander bank</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>ZI Nr Konta:</td>
+                                <td>17 1090 2053 0000 0001 4795 9925</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>ZI IBAN:</td>
+                                <td>17 1090 2053 0000 0001 4795 9925</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>€ Nr Konta:</td>
+                                <td>54 1090 2053 0000 0001 4796 0035</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>€ IBAN:</td>
+                                <td>54 1090 2053 0000 0001 4796 0035</td>
+                            </tr>
+                            <tr class="mobile-tr">
+                                <td>BIC/SWIFT:</td>
+                                <td>WBKPPLPP</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>  -->
+
+            <!-- Contact Divider -->
+            <div id="contacts"  class="ed-center-hr">
+                <hr style="width: 10%; margin: 0 auto;" class="ed-style-hr">
+            </div>
+
+            <footer class="ed-contact">
+
+                <h1 class="uk-text-bolder ed-light-text">{{__('home.contact.title')}}</h1>
+
+                <div class="uk-section ed-light-text">
+
+                    <h3 class="ed-light-text ed-center-text uk-text-bolder" style="padding-bottom: 50px;font-size: xx-large;">{{__('home.contact.section.title')}}</h3>
+                    <div class="uk-container">
+
+                        <div class="uk-grid-match uk-child-width-1-3@m " uk-grid>
+                            <div>
+                                <p>+38 098 590 90 44 <br>+48 574 567 102 <br>+48 167 334 136</p>
+                            </div>
+                            <div>
+                                <p> <b>Privat Bank</b>: 5168 7456 0252 3166 - Valerii Tsaralunha <br> <b>Millenium Bank</b>: 4874 7420 9281 5812 - Valerii Tsaralunha</p>
+                            </div>
+                            <div>
+                                <p> <b>{{__('home.contact.section.blocks.block_3.title')}}</b> {{__('home.contact.section.blocks.block_3.content')}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </footer>
+        </article>
     </body>
 </html>

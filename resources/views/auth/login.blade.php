@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">{{ __('Login') }}</div>
+          <div class="card-header">{{ __('auth.login') }}</div>
 
           <div class="card-body">
             <form method="POST" action="{{ route('login') }}">
@@ -77,12 +77,14 @@
       <script>
       // Initialize Firebase
       var firebaseConfig = {
-        apiKey: "AIzaSyCoROKp7nbcXqPP0YtA4fO3sPiVYVyi9pI",
-        authDomain: "laravel-auth-9a60c.firebaseapp.com",
-        projectId: "laravel-auth-9a60c",
-        storageBucket: "laravel-auth-9a60c.appspot.com",
-      messagingSenderId: "969104073456",
-      appId: "1:969104073456:web:5a843163dbf96cb9fd1835"
+        apiKey: "AIzaSyB7Ku1_MxcUkr4KScV8eZleoL_F5ls2HHI",
+        authDomain: "alpha-eddan.firebaseapp.com",
+        databaseURL: "https://alpha-eddan-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "alpha-eddan",
+        storageBucket: "alpha-eddan.appspot.com",
+        messagingSenderId: "103164304522",
+        appId: "1:103164304522:web:2d7aaf8b6fdaeca3892173",
+        measurementId: "G-EDRYWNMH8L"
       };
       firebase.initializeApp(config);
       var facebookProvider = new firebase.auth.FacebookAuthProvider();

@@ -46,6 +46,8 @@ class LoginController extends Controller
      public function __construct(FirebaseAuth $auth) {
        $this->middleware('guest')->except('logout');
        $this->auth = $auth;
+
+
     }
  protected function login(Request $request) {
        try {
@@ -62,9 +64,13 @@ class LoginController extends Controller
           throw ValidationException::withMessages([$this->username() => [trans('auth.failed')],]);
        }
     }
-    public function username() {
-       return 'email';
-    }
+      public function username() {
+         return 'email';
+      }
+public function logout(Request $request) {
+   Auth::logout();
+   return redirect('/login');
+}
  public function handleCallback(Request $request, $provider) {
        $socialTokenId = $request->input('social-login-tokenId', '');
        try {
