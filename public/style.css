@@ -18,7 +18,7 @@ body {
 
 .ed-title-padding-bottom {
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 .ed-subtitle-margin {
     margin: 0px auto 50px;
@@ -591,7 +591,8 @@ Mobile nav bar
     border-left: 1px solid #e5e5e5;
 }
 .ed-simple-style-vertical-hr{
-    margin: 50px auto !important;
+    height: 50px !important;
+    margin: 30px auto !important;
 }
 
 /* Slider */

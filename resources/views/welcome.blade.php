@@ -225,7 +225,7 @@
                             </li>
                             <!--  -->
 
-                            <li>
+                            <!-- <li>
                                 <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_6.title')}}</a>
                                 <div class="uk-accordion-content">
                                     <p>{{__('home.fst-program.section_1.professions.profession_6.content')}}</p>
@@ -236,7 +236,7 @@
                                 <div class="uk-accordion-content">
                                     <p>{{__('home.fst-program.section_1.professions.profession_7.content')}}</p>
                                 </div>
-                            </li>
+                            </li> -->
                             <li>
                                 <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_8.title')}}</a>
                                 <div class="uk-accordion-content">
@@ -259,6 +259,12 @@
                                 <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_11.title')}}</a>
                                 <div class="uk-accordion-content">
                                     <p>{{__('home.fst-program.section_1.professions.profession_11.content')}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{__('home.fst-program.section_1.professions.profession_6.title')}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{__('home.fst-program.section_1.professions.profession_6.content')}}</p>
                                 </div>
                             </li>
                             <li>
@@ -330,13 +336,14 @@
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в трудоустройстве во время обучения;</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в поиске жилья в крупном городе Жешув;</td>
+                                    <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в поиске жилья в крупном городе Жешув;</td> -->
+                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Выдача документа от учебного заведения, который свидетельствует о резервации и зачислении;</td>
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Курьерская доставка оригиналов документов из учебного заведения;</td>
                                 </tr>
-                                <tr>
-                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Выдача документа от учебного заведения, который свидетельствует о резервации и зачислении;</td>
-                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в открытие банковского счета;</td>
-                                </tr>
+                                <!-- <tr> -->
+                                    
+                                    <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Помощь в открытие банковского счета;</td> -->
+                                <!-- </tr> -->
                                 <tr>
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Ваш личный менеджер с вами на связи 24/7 в любом удобном для вас мессенджере;</td>
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Прямой контакт с опекуном;</td>
@@ -346,7 +353,6 @@
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантированное трудоустройство по специальности по окончанию обучения.</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантия поступления в наше учебное заведение;</td>
                                     <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>Гарантия поступления в наше учебное заведение;</td>
                                 </tr>
                             </tbody>
@@ -741,7 +747,7 @@
 
             <div id="thd-Program" class="ed-thd-program">
                 <h3 class="ed-light-text uk-text-bolder ed-largeer-title ed-title-padding-bottom">{{__('home.fth-program.title')}}</h3>
-                <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.fth-program.section_1.title')}}</h3>
+                <!-- <h2 class="ed-light-text uk-text-bolder" style="text-align: center;">{{__('home.fth-program.section_1.title')}}</h3> -->
                 <div class="ed-special-list">
                     
 
@@ -939,10 +945,10 @@
 
             <!-- УСЛОВИЯ -->
             <div class="ed-white ed-special-list " style="width: 80%">
-                <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center; margin-bottom: 50px">{{__('home.conditions.title')}}</h1>
+                <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.conditions.title')}}</h1>
 
 
-                <div class="whole-width"></div>
+                <!-- <div class="whole-width"></div> -->
 
                 <div>
                     <div class="ed-subtitle-margin" style="width: 60%">
@@ -979,25 +985,29 @@
                             </tr>
                             <tr>
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_13')}}</td>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_14')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_21')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_22')}}</td> -->
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_14')}}</td> -->
                             </tr>
                             <tr>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_15')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_15')}}</td> -->
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_17')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_25')}}</td>
                             </tr>
                             <tr>
                                 <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_18')}}</td> -->
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_24')}}</td>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_19')}}</td>
-                            </tr>
-                            <tr>
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_20')}}</td>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_21')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_19')}}</td> -->
                             </tr>
                             <tr>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_22')}}</td>
+                                
+                                
+                            </tr>
+                            <tr>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_22')}}</td> -->
                                 <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_23')}}</td> -->
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_25')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_25')}}</td> -->
                             </tr>
                             <tr>
                                 <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.conditions.section_1.blocks.block_24')}}</td>
@@ -1009,11 +1019,11 @@
                         </tbody>
                     </table>
                 </div>
-                <hr class="ed-mini-vertical-hr ">
+                <!-- <hr class="ed-mini-vertical-hr "> -->
                 
                 </div>
 
-                <div>
+                <!-- <div>
                     <div class="ed-subtitle-margin" style="width: 60%">
                         <h3 class="uk-text-bolder" style="text-align: center;">{{__('home.conditions.section_2.title')}}</h3>
                     </div>
@@ -1030,7 +1040,7 @@
 
                     </div>
                     
-                </div>
+                </div> -->
 
                 
             </div>
@@ -1058,7 +1068,8 @@
                             </tr>
                             <tr>
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_8')}}</td>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_4')}}</td>
+                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_9')}}</td>
+                                <!-- <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_4')}}</td> -->
                             </tr>
                             <tr>
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_5')}}</td>
@@ -1069,7 +1080,7 @@
                                 <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_3')}}</td>
                             </tr>
                             <tr>
-                                <td><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></span>{{__('home.advantages.blocks.block_9')}}</td>
+                                
                             </tr>
 
                         </tbody>
@@ -1335,7 +1346,7 @@
 
                             <div>
                                 <h3 class="ed-leadership-title">Татьяна Ли</h3>
-                                <h4 class="ed-leadership-subtitle">Заместитель директора</h4>
+                                <h4 class="ed-leadership-subtitle">Заместитель директора. Консультация в подготовке документов и консультация в открытие студенческой визы</h4>
                             </div>
                         </div>
                     </div>
@@ -1345,7 +1356,7 @@
 
                             <div>
                                 <h3 class="ed-leadership-title">Катерина Апостолова</h3>
-                                <h4 class="ed-leadership-subtitle">Старший менеджер</h4>
+                                <h4 class="ed-leadership-subtitle">Старший менеджер. Детальная консультация по обучению, подготовке документов и открытие визы студенческой визы</h4>
                             </div>
                         </div>
                     </div>
@@ -1460,8 +1471,8 @@
             <div class="ed-white ed-special-list " style="width: 80%;">
                 
 
-                <div style="margin-bottom: 100px;">
-                    <div style="margin: 0px auto; width: 60%;  margin-bottom:70px">
+                <div style="margin-bottom: 40px;">
+                    <div style="margin: 0px auto; width: 60%;">
                         <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.official_representative.title')}}</h2>
                     </div>
 
@@ -1505,10 +1516,10 @@
 
                 </div>
 
-                <div class="whole-width"></div>
+                <!-- <div class="whole-width"></div> -->
 
                 <div>
-                    <div style="margin: 0px auto; width: 60%;  margin-bottom:70px">
+                    <div style="margin: 0px auto; width: 60%;">
                         <h1 class="uk-text-bolder ed-largeer-title" style="text-align: center;">{{__('home.requisites.title')}}</h2>
                     </div>
 
@@ -1516,7 +1527,8 @@
                     <div class="ed-special-list ed-gradient-background ed-light-text uk-text-bolder" style="width: 70%;">
                         <table class="uk-table">
                             <tbody>
-                            <tr >
+                            <tr>
+                                <td></td>
                                 <td>MIĘDZYNARODOWE CENTRUM EDUKACJI I PRAKTYKI SP.Z.O.O.</td>
                             </tr>
                                 <tr class="mobile-tr">
@@ -1542,6 +1554,7 @@
                                     
                                 </tr>
                                 <tr class="mobile-tr">
+                                    <td>Банк:</td>
                                     <td>Santander bank</td>
                                 </tr>
                                 <tr class="mobile-tr">
@@ -1665,9 +1678,9 @@
                             <div>
                                 <p>+38 098 590 90 44 <br>+48 574 567 102 <br>+48 167 334 136</p>
                             </div>
-                            <div>
+                            <!-- <div>
                                 <p> <b>Privat Bank</b>: 5168 7456 0252 3166 - Valerii Tsaralunha <br> <b>Millenium Bank</b>: 4874 7420 9281 5812 - Valerii Tsaralunha</p>
-                            </div>
+                            </div> -->
                             <div>
                                 <p> <b>{{__('home.contact.section.blocks.block_3.title')}}</b> {{__('home.contact.section.blocks.block_3.content')}}</p>
                             </div>
